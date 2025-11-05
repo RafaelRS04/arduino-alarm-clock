@@ -56,7 +56,7 @@ void buzzer_handler() {
 }
 
 /* ------------------------ Buzzer public interface ------------------------ */
-void Buzzer::begin(uint8_t pwm_pin, uint16_t bpm=DEFAULT_BUZZER_BPM) {
+void Buzzer::begin(uint8_t pwm_pin, uint16_t bpm) {
     float frequency = bpm / 60;
     
     buzzer_pin = pwm_pin;
